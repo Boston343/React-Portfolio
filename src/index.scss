@@ -86,13 +86,13 @@ section {
   margin-top: 8rem;
   // height: 100vh;
 
-  h2,
-  h5 {
+  > h2,
+  > h5 {
     text-align: center;
     color: var(--color-light);
   }
 
-  h2 {
+  > h2 {
     color: var(--color-primary);
     margin-bottom: 3rem;
   }

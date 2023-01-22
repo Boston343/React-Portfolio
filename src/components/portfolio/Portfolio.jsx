@@ -3,9 +3,9 @@ import "./portfolio.css";
 import img1 from "../../assets/portfolio1.jpg";
 import img2 from "../../assets/portfolio2.jpg";
 import img3 from "../../assets/portfolio3.jpg";
-import img4 from "../../assets/portfolio4.jpg";
-import img5 from "../../assets/portfolio5.jpg";
-import img6 from "../../assets/portfolio6.jpg";
+// import img4 from "../../assets/portfolio4.jpg";
+// import img5 from "../../assets/portfolio5.jpg";
+// import img6 from "../../assets/portfolio6.jpg";
 
 const data = [
   {
@@ -37,7 +37,7 @@ function PortfolioItem({ image, title, github, demo }) {
   return (
     <article className="portfolio__item">
       <div className="portfolio__item-image">
-        <img src={image} alt="portfolio project 1" />
+        <img src={image} alt="portfolio project" />
       </div>
       <h3>{title}</h3>
       <div className="portfolio__item-cta">
