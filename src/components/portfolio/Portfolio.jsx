@@ -13,21 +13,21 @@ const data = [
     image: img1,
     title: "Crypto Currency Dashboard & Financial Visualization",
     github: "https://github.com",
-    demo: "https://dribbble.com/shorts/16673715-Crypto-currency-dashboards-and-financial-data-visualization",
+    demo: "https://dribbble.com/shots/16673715-Crypto-currency-dashboards-and-financial-data-visualization",
   },
   {
     id: 2,
     image: img2,
     title: "Charts templates & infographics in Figma",
     github: "https://github.com",
-    demo: "https://dribbble.com/shorts/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    demo: "https://dribbble.com/shots/16580766-Orion-UI-kit-Charts-templates-infographics-in-Figma",
   },
   {
     id: 3,
     image: img3,
     title: "Figma dashboard UI kit for data design web apps",
     github: "https://github.com",
-    demo: "https://dribbble.com/shorts/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
+    demo: "https://dribbble.com/shots/17290917-Eclipse-Figma-dashboard-UI-kit-for-data-design-web-apps",
   },
 ];
 
