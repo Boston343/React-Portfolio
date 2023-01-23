@@ -6,6 +6,11 @@ import { BsTwitter } from "react-icons/bs";
 
 const Contact = () => {
   const form = useRef();
+  const [btnText, setBtnText] = React.useState("Send Message");
+
+  function notificationEnd() {
+    setBtnText("Send Message");
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -20,6 +25,8 @@ const Contact = () => {
       .then(
         (res) => {
           console.log(res.text);
+          setBtnText("Message Sent!");
+          setTimeout(notificationEnd, 5000);
         },
         (err) => {
           console.log(err.text);
@@ -27,7 +34,6 @@ const Contact = () => {
       );
 
     e.target.reset();
-    // alert("Message sent succesfully!");
   };
 
   return (
@@ -78,8 +84,9 @@ const Contact = () => {
             required
           ></textarea>
           <button type="submit" value="send" className="btn btn-primary">
-            Send Message
+            {btnText}
           </button>
+          <h2>Success!</h2>
         </form>
       </div>
     </section>
