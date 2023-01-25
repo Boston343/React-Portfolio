@@ -13,6 +13,7 @@ const Contact = () => {
   }
 
   const sendEmail = (e) => {
+    // prevent page from reloading on form submit
     e.preventDefault();
 
     emailjs
@@ -25,6 +26,8 @@ const Contact = () => {
       .then(
         (res) => {
           console.log(res.text);
+
+          // user notification of successful form submission
           setBtnText("Message Sent!");
           setTimeout(notificationEnd, 5000);
         },
@@ -33,6 +36,7 @@ const Contact = () => {
         }
       );
 
+    // reset the form fields
     e.target.reset();
   };
 
@@ -86,7 +90,6 @@ const Contact = () => {
           <button type="submit" value="send" className="btn btn-primary">
             {btnText}
           </button>
-          <h2>Success!</h2>
         </form>
       </div>
     </section>
