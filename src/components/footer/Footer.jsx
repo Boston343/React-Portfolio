@@ -36,6 +36,10 @@ const Footer = () => {
       <div className="footer__socials">
         <Socials />
       </div>
+
+      <div className="footer__copyright">
+        <small>&copy; {new Date().getFullYear()} Web Reaper</small>
+      </div>
     </footer>
   );
 };
